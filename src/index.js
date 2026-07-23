@@ -6,15 +6,25 @@ import reportWebVitals from './reportWebVitals';
 import Keys from './Mainkeys/Keys';
 import Lifecycles from './Reactlifecycles/Lifecycles';
 import Hooks from './Hooks/Hooks';
+import Important from './Importanttopics/Important';
+
+import { BrowserRouter, HashRouter } from 'react-router-dom';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    {/* <App /> */}
-    {/* <Keys /> */}
-    {/* <Lifecycles /> */}
-    <Hooks />
-  </React.StrictMode>
-  // <Lifecycles />
+  // <React.StrictMode>
+  //   {/* <App /> */}
+  //   {/* <Keys /> */}
+  //   {/* <Lifecycles /> */}
+  //   {/* <Hooks /> */}
+  //   <Important />
+  // </React.StrictMode>
+  // // <Lifecycles />
+
+  <BrowserRouter>
+    <Important />
+  </BrowserRouter>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
